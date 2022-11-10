@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/JTattoo-1.6.11.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-digester-1.7.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/groovy-all-1.5.5.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/iText-2.1.7.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/jaco-mp3-player-0.9.4.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/jasperreports-3.7.5.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/jasperreports-extensions-3.5.3.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/jasperreports-fonts-3.7.5.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/javax.mail.jar"/>
+	<classpathentry kind="lib" path="F:/Java swing/Java S/jasper/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

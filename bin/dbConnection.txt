@@ -1,0 +1,5 @@
+Server: localhost
+port: 3306
+userName: root
+password: 1234
+dbFile: hms_update

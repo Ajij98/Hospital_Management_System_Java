@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SupplierReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="userSql" class="java.lang.String">
+		<defaultValueExpression><![CDATA["select userId,userName,email,address,mobileNum,userType from tbnewuserinfo"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[$P!{userSql}]]>
+	</queryString>
+	<field name="userId" class="java.lang.String"/>
+	<field name="userName" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="mobileNum" class="java.lang.String"/>
+	<field name="userType" class="java.lang.String"/>
+	<variable name="SLNo" class="java.math.BigDecimal">
+		<variableExpression><![CDATA[$V{SLNo}+1]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Report]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="555" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CHEVRON,Chattogram]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="15" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="14" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="-1" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="31" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="107" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="200" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="262" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="1" width="31" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SL#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="31" y="1" width="77" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UserId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="1" width="93" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UserName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="1" width="62" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gmail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="0" width="86" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<line>
+				<reportElement x="348" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="429" y="1" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="349" y="0" width="81" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="124" height="14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[User Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="13" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="-1" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="554" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="31" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="107" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="200" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="262" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="348" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="429" y="0" width="1" height="13"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="1" y="1" width="30" height="13"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression class="java.math.BigDecimal"><![CDATA[$V{SLNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="32" y="0" width="75" height="14"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{userId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="108" y="-1" width="92" height="15"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="1" width="62" height="13"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="-1" width="86" height="15"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="0" width="81" height="14"/>
+				<box leftPadding="2"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{mobileNum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="0" width="124" height="13"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{userType}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
